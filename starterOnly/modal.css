@@ -125,14 +125,14 @@ img {
   }
 } 
 .img {
-  /* padding-right: 1rem;
+  padding-right: 1rem;
   height: 3vh;
-  width: 17vh; */
+  width: 17vh;
 
 }
 main {
   font-size: 130%;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   color: black;
   padding-top: 0.5vw;
   padding-left: 2vw; 
@@ -485,8 +485,8 @@ input[data-error]::after {
 }
 .hero-text {
   width: 115%;
-  font-weight: bold;
-  font-size: small;
+  /* font-weight: bold; */
+  font-size: x-large;
   margin-top: 27px;
   padding: 0;
   word-wrap: break-word;
