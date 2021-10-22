@@ -17,6 +17,7 @@ body {
   background-image: url("background.png");
   font-family: var(--font-default);
   font-size: 18px;
+  /* ###5### passer de 1300 à 2300px et add width 95%*/
   max-width: 2300px;
   width: 95%;
   margin: 0 auto;
@@ -98,7 +99,21 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
+    /* ##5## Retirer ce margin-top: -15px qui coupe le menu hamburger */
+    /* margin-top: -15px; */
+  }
+  .hero-text {
+    /* ####5### passer à 1rem */
+    font-size: 1rem;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  .hero-headline {
+    /* ####5### passer à 2.5rem */
+    font-size: 2.5rem;
+    white-space: normal;
+    width: 100%;
+    font-weight: bold;
   }
 } 
 
@@ -108,8 +123,8 @@ main {
   color: black;
   padding-top: 0.5vw;
   padding-left: 2vw;
-  padding-right: 2vw;
-  margin: 1px 20px 15px;
+  /* padding-right: 2vw; */
+  /* margin: 1px 20px 15px; */
   border-radius: 2rem;
   text-align: justify;
 
@@ -254,6 +269,7 @@ input[data-error]::after {
   left: -30px;
   top: -1px;
   transition: 0.3s;
+  line-height: 0.1;
 }
 .checkbox-label .checkbox-icon::after,
 .checkbox2-label .checkbox-icon::after {
@@ -419,6 +435,7 @@ input[data-error]::after {
 }
 .hero-section {
   min-height: 93vh;
+  max-height: 93vh;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -449,15 +466,16 @@ input[data-error]::after {
   z-index: 1;
 }
 .hero-headline {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: normal;
   white-space: nowrap;
 }
 .hero-text {
   width: 146%;
   font-weight: normal;
-  margin-top: 57px;
+  margin-top: 27px;
   padding: 0;
+  word-wrap: break-word;
 }
 .btn-signup {
   outline: none;
@@ -509,12 +527,16 @@ footer {
     display: none;
   }
   .hero-headline {
-    font-size: 4.5rem;
+    /* ####5### passer de 4.5rem à 3.5rem */
+    font-size: 2.5rem;
     white-space: normal;
+    word-wrap: break-word;
+    font-weight: bold;
   }
   .hero-text {
     width: 300px;
     font-size: 1.rem;
+    word-wrap: break-word;
   }
   .hero-img img {
     border-radius: 10px;
