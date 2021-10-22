@@ -55,7 +55,7 @@ function launchModal() {
 // listener fermeture formulaire au clic sur la croix
 buttonClose.addEventListener("click",closeModal);
 
-//Fonction de fermeture formulaire au clic sur la croix
+//###1 TODO### : close Modal ### Fonction de fermeture formulaire au clic sur la croix
 function closeModal() {
   modalbg.style.display = "none";
 
@@ -64,7 +64,7 @@ function closeModal() {
 
   formulaire.addEventListener("submit", soumettre);
   function soumettre(e){
-  /*verification le prénom est vide ou à moins de 2 charactères ou contient des chiffres*/
+  /* ###3### verification le prénom est vide ou à moins de 2 charactères ou contient des chiffres*/
   if (prenom.value ===0 || prenom.value.length <=2 || regexLettres.test(prenom.value) == false)
   {erreur_prenom.textContent="Le prénom doit comporter 2 charactères minimum sans accent et uniquement des lettres.";
   erreur_prenom.style.fontSize = "14px";
@@ -151,7 +151,7 @@ focuscgu.checked === true
 }
 
 
-//Envoi formulaire au clic sur c'est parti si tout le formulaire est ok
+// ###4### IF All&ALL Envoi formulaire au clic sur c'est parti si tout le formulaire est ok
 envoi_formulaire.addEventListener("click", function() {
   if (prenom.value && nom.value && messagerie.value && naissance.value && nombre_tournois.value &&
     ((villeNY.checked) || (villeSF.checked) || (villeSeattle.checked) ||
