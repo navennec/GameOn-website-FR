@@ -28,7 +28,6 @@ p {
 
 img {
   padding-right: 1rem;
-
 }
 
 .topnav {
@@ -336,12 +335,14 @@ input[data-error]::after {
   cursor: pointer;
   border: 0;
 }
+/*###5### ajout Bkgd au survol du Btn "Je m'inscrut" */
 .btn-submit:hover {
   background: #3876ac;
 }
+/*###5### ajout au Btn "fermer" du message de remerciment */
 .btn-fermer {
   display: none;
-  margin-bottom: 100px;
+  margin-bottom: 1000px;
 }
 
 /* custom select styles */
@@ -512,7 +513,7 @@ footer {
   }
   .hero-text {
     width: 300px;
-    font-size: 1.3rem;
+    font-size: 1.rem;
   }
   .hero-img img {
     border-radius: 10px;
