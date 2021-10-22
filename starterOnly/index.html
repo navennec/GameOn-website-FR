@@ -65,187 +65,114 @@
                 id="formulaire"
                 novalidate
               >
-  
-              <!--Champ prénom-->
-                <div class="formData">
-                  <label for="first">Prénom</label><br />
-                  <input class="text-control" type="text" id="first" name="first"/>
-                  <span id="erreur_prenom"></span>
-                </div>
-  
-              <!--Champ nom-->
-                <div id="div-nom" class="formData">
-                  <label for="last">Nom</label> 
-                    <input class="text-control" type="text" id="last" name="last" minlength="2"/>
-                 
-                  <span id="erreur_nom"></span>
-                </div>
-  
-              <!--Champ email-->
-                <div class="formData">
-                  <label for="email">E-mail</label>
-                  <input class="text-control" type="email" id="email" name="email"/>
-                    <span id="erreur_email"></span>
-                </div>
-  
-                <!--Champ date de naissance-->
-                <div class="formData">
-                  <label for="birthdate">Date de naissance</label>
-                  <input class="text-control" type="date" id="birthdate" name="birthdate"/>
-                    <span id="erreur_anniversaire"></span>
-                </div>
-  
-                <!--Champ nombre de tournois joués-->
-                <div class="formData">
-                  <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br />
-                  <input type="number" class="text-control" 
-                  id="quantity" name="quantity" min="0" max="99">
-                  <span id="erreur_nombre"></span>
-                </div>
 
+             <!--Champ prénom-->
+             <div class="formData">
+              <label for="first">Prénom</label><br />
+              <input class="text-control" type="text" id="first" name="first"/>
+              <span id="erreur_prenom"></span>
+            </div>
 
-                <main>
-      <!--Contenu principal de la page-->
-      <div class="hero-section">
-        <div class="hero-content">
-          <h1 class="hero-headline">Marathon national<br />de jeux vidéos</h1>
-          <p class="hero-text">Vous aimez jouer ? Notre prochain évènement gaming est ouvert aux réservations... Places limitées !</p>
-          <button class="btn-signup modal-btn">je m'inscris</button>
-        </div>
-        <div class="hero-img">
-          <img src="./bg_img.jpg" alt="img" />
-        </div>
-        <!--Bouton pour ouvrir le formulaire d'inscription-->
-        <button class="btn-signup modal-btn">je m'inscris</button>
-        <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-      </div>
-      <!--Activation lors du clic sur bouton d'inscription, changement couleur de fond du site-->
-      <div class="bground">
-        <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <div class="content">
-          <!--croix pour fermer formulaire d'inscription????????????onclick closModal???-->
-          <span class="close" onclick="closeModal();"></span>
-          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-          <!--Containeur formulaire d'inscription-->
-          <div class="modal-body">
-            <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-            <!--Containeur des différents champs du formulaire à remplir-->
-            <form
-              name="reserve"
-              action="index.html"
-              method="get"
-              id="formulaire"
-              novalidate
-            >
+          <!--Champ nom-->
+            <div id="div-nom" class="formData">
+              <label for="last">Nom</label> 
+                <input class="text-control" type="text" id="last" name="last" minlength="2"/>
+             
+              <span id="erreur_nom"></span>
+            </div>
 
-            <!--Champ prénom-->
-              <div class="formData">
-                <label for="first">Prénom</label><br />
-                <input class="text-control" type="text" id="first" name="first"/>
-                <span id="erreur_prenom"></span>
-              </div>
+          <!--Champ email-->
+            <div class="formData">
+              <label for="email">E-mail</label>
+              <input class="text-control" type="email" id="email" name="email"/>
+                <span id="erreur_email"></span>
+            </div>
 
-            <!--Champ nom-->
-              <div id="div-nom" class="formData">
-                <label for="last">Nom</label> 
-                  <input class="text-control" type="text" id="last" name="last" minlength="2"/>
+            <!--Champ date de naissance-->
+            <div class="formData">
+              <label for="birthdate">Date de naissance</label>
+              <input class="text-control" type="date" id="birthdate" name="birthdate"/>
+                <span id="erreur_anniversaire"></span>
+            </div>
+
+            <!--Champ nombre de tournois joués-->
+            <div class="formData">
+              <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br />
+              <input type="number" class="text-control" 
+              id="quantity" name="quantity" min="0" max="99">
+              <span id="erreur_nombre"></span>
+            </div>           
+            
+            <!--Boutons radio des villes-->
+            <p class="text-label">Quelles villes ?</p>
                
-                <span id="erreur_nom"></span>
-              </div>
+            <span id="erreur_ville"></span>
+            <div class="formData">
+              <input
+                class="checkbox-input"
+                type="radio"
+                id="location1"
+                name="location"
+                value="New York"
+              />
+              <label class="checkbox-label" for="location1">
+                <span class="checkbox-icon"></span>
+                New York</label>
 
-            <!--Champ email-->
-              <div class="formData">
-                <label for="email">E-mail</label>
-                <input class="text-control" type="email" id="email" name="email"/>
-                  <span id="erreur_email"></span>
-              </div>
+              <input
+                class="checkbox-input"
+                type="radio"
+                id="location2"
+                name="location"
+                value="San Francisco"
+              />
+              <label class="checkbox-label" for="location2">
+                <span class="checkbox-icon"></span>
+                San Francisco</label>
 
-              <!--Champ date de naissance-->
-              <div class="formData">
-                <label for="birthdate">Date de naissance</label>
-                <input class="text-control" type="date" id="birthdate" name="birthdate"/>
-                  <span id="erreur_anniversaire"></span>
-              </div>
+              <input
+                class="checkbox-input"
+                type="radio"
+                id="location3"
+                name="location"
+                value="Seattle"
+              />
+              <label class="checkbox-label" for="location3">
+                <span class="checkbox-icon"></span>
+                Seattle</label>
+              <input
+                class="checkbox-input"
+                type="radio"
+                id="location4"
+                name="location"
+                value="Chicago"
+              />
+              <label class="checkbox-label" for="location4">
+                <span class="checkbox-icon"></span>
+                Chicago</label>
 
-              <!--Champ nombre de tournois joués-->
-              <div class="formData">
-                <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br />
-                <input type="number" class="text-control" 
-                id="quantity" name="quantity" min="0" max="99">
-                <span id="erreur_nombre"></span>
-              </div>
+              <input
+                class="checkbox-input"
+                type="radio"
+                id="location5"
+                name="location"
+                value="Boston"
+                />
+              <label class="checkbox-label" for="location5">
+                <span class="checkbox-icon"></span>
+                Boston</label>
 
-              <main>
-                <!--Contenu principal de la page-->
-                <div class="hero-section">
-                  <div class="hero-content">
-                    <h1 class="hero-headline">Marathon national<br />de jeux vidéos</h1>
-                    <p class="hero-text">Vous aimez jouer ? Notre prochain évènement gaming est ouvert aux réservations... Places limitées !</p>
-                    <button class="btn-signup modal-btn">je m'inscris</button>
-                  </div>
-                  <div class="hero-img">
-                    <img src="./bg_img.jpg" alt="img" />
-                  </div>
-                  <!--Bouton pour ouvrir le formulaire d'inscription-->
-                  <button class="btn-signup modal-btn">je m'inscris</button>
-                  <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-                </div>
-                <!--Activation lors du clic sur bouton d'inscription, changement couleur de fond du site-->
-                <div class="bground">
-                  <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-                  <div class="content">
-                    <!--croix pour fermer formulaire d'inscription????????????onclick closModal???-->
-                    <span class="close" onclick="closeModal();"></span>
-                    <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-                    <!--Containeur formulaire d'inscription-->
-                    <div class="modal-body">
-                      <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-                      <!--Containeur des différents champs du formulaire à remplir-->
-                      <form
-                        name="reserve"
-                        action="index.html"
-                        method="get"
-                        id="formulaire"
-                        novalidate
-                      >
-          
-                      <!--Champ prénom-->
-                        <div class="formData">
-                          <label for="first">Prénom</label><br />
-                          <input class="text-control" type="text" id="first" name="first"/>
-                          <span id="erreur_prenom"></span>
-                        </div>
-          
-                      <!--Champ nom-->
-                        <div id="div-nom" class="formData">
-                          <label for="last">Nom</label> 
-                            <input class="text-control" type="text" id="last" name="last" minlength="2"/>
-                         
-                          <span id="erreur_nom"></span>
-                        </div>
-          
-                      <!--Champ email-->
-                        <div class="formData">
-                          <label for="email">E-mail</label>
-                          <input class="text-control" type="email" id="email" name="email"/>
-                            <span id="erreur_email"></span>
-                        </div>
-          
-                        <!--Champ date de naissance-->
-                        <div class="formData">
-                          <label for="birthdate">Date de naissance</label>
-                          <input class="text-control" type="date" id="birthdate" name="birthdate"/>
-                            <span id="erreur_anniversaire"></span>
-                        </div>
-          
-                        <!--Champ nombre de tournois joués-->
-                        <div class="formData">
-                          <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br />
-                          <input type="number" class="text-control" 
-                          id="quantity" name="quantity" min="0" max="99">
-                          <span id="erreur_nombre"></span>
-                        </div>
-                        
+              <input
+                class="checkbox-input"
+                type="radio"
+                id="location6"
+                name="location"
+                value="Portland"
+              />
+              <label class="checkbox-label" for="location6">
+                <span class="checkbox-icon"></span>
+                Portland</label>
+            </div>
 
               <!--case CGU-->
               <div class="formData">
