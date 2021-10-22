@@ -114,6 +114,7 @@ img {
     font-size: 1rem;
     white-space: normal;
     word-wrap: break-word;
+    max-width: 340px;
   }
   .hero-headline {
     /* ####5### passer à 2.5rem */
@@ -549,9 +550,10 @@ footer {
     font-weight: bold;
   }
   .hero-text {
-    width: 720px;
+    max-width: 540px;
     font-size: 1.3rem;
     word-wrap: break-word;
+    white-space: normal;
   }
   .hero-img img {
     border-radius: 10px;
