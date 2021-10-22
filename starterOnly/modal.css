@@ -17,7 +17,8 @@ body {
   background-image: url("background.png");
   font-family: var(--font-default);
   font-size: 18px;
-  max-width: 1300px;
+  max-width: 2300px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -339,10 +340,10 @@ input[data-error]::after {
 .btn-submit:hover {
   background: #3876ac;
 }
-/*###5### ajout au Btn "fermer" du message de remerciment */
+/*###5### ? ajout au Btn "fermer" du message de remerciment */
 .btn-fermer {
   display: none;
-  margin-bottom: 1000px;
+  margin-bottom: 100px;
 }
 
 /* custom select styles */
