@@ -125,8 +125,8 @@ main {
   font-weight: bolder;
   color: black;
   padding-top: 0.5vw;
-  /* padding-left: 2vw; */
-  /* padding-right: 2vw; */
+  padding-left: 2vw; 
+  padding-right: 2vw;
   /* margin: 1px 20px 15px; */
   border-radius: 2rem;
   text-align: justify;
@@ -526,7 +526,7 @@ footer {
     background: #fff;
     color: #000;
     /* ##5## retirer le padding top du H1 */
-    padding:0 20px 20px 20px;
+    padding:0 0px 20px 0px;
   }
   .hero-content::after {
     content: unset;
